@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Antishots Photography -  Portfolio</title>
+
+  <style>
+  /* General Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    padding: 50px;
+    margin: 0;
+  }
+
+  h1, h2, h4 {
+    color: #111;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  section {
+    margin-bottom: 60px;
+  }
+
+  /* Hero Section */
+  #hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+  }
+
+  #hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  #hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+
+  #hero button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Images */
+  img {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.02);
+  }
+
+  /* FAQ */
+  #faq h4 {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  /* Contact Form */
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  form input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  form input[type="submit"]:hover {
+    background-color: #444;
+  }
+
+  /* Social Links */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+  .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+  /* ...all other styles like header, main, gallery, etc... */
+
+  /* Add this at the very bottom */
+  /* Make the site responsive */
+  @media (max-width: 768px) {
+    /* Adjust the padding and layout of the main section for small screens */
+    main {
+      padding: 1rem;
+      flex-direction: column; /* Stack items vertically */
+      gap: 1rem; /* Space between stacked items */
+    }
+
+    /* Make gallery items take full width on small screens */
+    .gallery-item {
+      flex: 1 1 100%;
+    }
+
+    /* Stack video section and adjust height */
+    .video-section iframe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9; /* Maintain video aspect ratio */
+    }
+
+    /* Adjust nav layout if needed (optional) */
+    nav ul {
+      flex-direction: column; /* Stack nav links vertically */
+      gap: 1rem; /* Space between links */
+    }
+
+    /* Reduce padding on sections for smaller screens */
+    section {
+      padding: 1rem;
+    }
+
+    /* Resize footer text and align center for mobile */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+  
+</style>
+
+
+
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav style="background-color: #000; padding: 20px;">
+  <ul style="list-style: none; display: flex; justify-content: center; gap: 40px; margin: 0; padding: 0;">
+    <li><a href="#hero" style="color: white; text-decoration: none; font-weight: bold;">Home</a></li>
+    <li><a href="#about" style="color: white; text-decoration: none; font-weight: bold;">About</a></li>
+    <li><a href="#portfolio" style="color: white; text-decoration: none; font-weight: bold;">Portfolio</a></li>
+    <li><a href="#contact" style="color: white; text-decoration: none; font-weight: bold;">Contact</a></li>
+  </ul>
+</nav>
+
+
+    <!-- Hero Section -->
+<section id="hero">
+  <h1>Antishots Photography</h1>
+  <p>
+    Capturing stories through timeless photos — from beach vibes in Mombasa to streets, events, and cultural heritage across Kenya.
+  </p>
+  <a href="#portfolio">
+    <button>View My Work</button>
+    
+  </a>
+</section>
+
+
+
+<!-- About Me Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hi, I’m <strong>ELLY OUMA</strong>, a passionate photographer based in Kenya. I specialize in capturing real moments — from the calm of the coast to the buzz of the streets, birthday celebrations, and cultural beauty.</p>
+  
+  <p>With years of experience behind the lens and a strong eye for detail, I bring stories to life through powerful images and videos. My work blends creativity, color, and emotion to create timeless memories.</p>
+
+  <p>When I’m not shooting, I’m usually editing, planning the next big session, or exploring new creative styles. Let’s work together and create something unforgettable.</p>
+</section>
+
+
+
+<!-- Services Section -->
+<section id="services">
+  <h2>My Services</h2>
+  <p>Here’s what I offer as a professional Photographer and Videographer:</p>
+
+  <ul>
+    <li><strong>Birthday Shoots:</strong> Memorable moments from cake to dance floor.</li>
+    <li><strong>Event Coverage:</strong> Full photo and video coverage for parties, weddings, and special occasions.</li>
+    <li><strong>Street Photography:</strong> Raw, artistic moments captured from daily life in Kenya.</li>
+    <li><strong>Beach & Travel Photography:</strong> Stunning visuals from places like Diani and Mombasa.</li>
+    <li><strong>Model Portfolios:</strong> Personalized photo sessions for models and influencers.</li>
+    <li><strong>Video Highlights:</strong> Edited short reels and highlights for social media or events.</li>
+  </ul>
+</section>
+
+
+<!-- Portfolio Section -->
+ <div class="gallery">
+<section id="portfolio">
+  <h2>Diani Beach Shots</h2>
+  <p>Some of my favorite photos taken along the beautiful beaches of Diani — relaxed, colorful, and full of life.</p>
+
+  <div>
+    <a href="Images/IMG_3080.png" class="lightbox">
+    <img src="Images/IMG_3080.png" alt="Mombasa Beach Shot 1" class="gallery-image" width="320" height="450">
+  </a>
+    <a href="Images/IMG_3063.png" class="lightbox">
+    <img src="Images/IMG_3063.png" alt="Mombasa Beach Shot 2" width="320" height="450">
+  </a>
+    <a href="Images/IMG_3065.png" class="lightbox">
+    <img src="Images/IMG_3065.png" alt="Mombasa Beach Shot 3" width="320" height="450">
+  </a>
+    <a href="Images/IMG_3075.png" class="lightbox">
+    <img src="Images/IMG_3075.png" alt="Mombasa Beach Shot 3" width="320" height="450">
+  </a>
+    <a href="Images/IMG_3090.png" class="lightbox">
+    <img src="Images/IMG_3090.png" alt="Mombasa Beach Shot 3" width="320" height="450">
+  </a>
+    <a href="Images/IMG_3067_2.png" class="lightbox">
+    <img src="Images/IMG_3067_2.png" alt="Mombasa Beach Shot 3" width="320" height="450">
+  </a>
+    <a href="Images/IMG_3091_2.png" class="lightbox">
+    <img src="Images/IMG_3091_2.png" alt="Mombasa Beach Shot 3" width="320" height="450">
+  </a>
+    <a href="Images/IMG_3102.png" class="lightbox">
+    <img src="Images/IMG_3102.png" alt="Mombasa Beach Shot 3" width="320" height="450">
+  </a>
+  </div>
+</section>
+  
+
+<!-- Street Photography Section -->
+<section>
+  <h2>Street Photography</h2>
+  <p>Every street has a story. Here are a few raw, real, and powerful moments I’ve captured from daily life on the streets.</p>
+
+  <div>
+    <a href="Images/Street (1).jpg" class="lightbox">
+    <img src="Images/Street (1).jpg" alt="Mombasa Beach Shot 1" class="gallery-image" width="320" height="450">
+  </a>
+    <a href="Images/Street (2).jpg" class="lightbox">
+    <img src="Images/Street (2).jpg" alt="Mombasa Beach Shot 2" width="320" height="450">
+  </a>
+    <a href="Images/Street (1).png" class="lightbox">
+    <img src="Images/Street (1).png" alt="Mombasa Beach Shot 3" width="320" height="450">
+  </a>
+    <a href="Images/Street (3).jpg" class="lightbox">
+    <img src="Images/Street (3).jpg" alt="Mombasa Beach Shot 3" width="320" height="450">
+  </a>
+    <a href="Images/Street (2).png" class="lightbox">
+    <img src="Images/Street (2).png" alt="Mombasa Beach Shot 3" width="320" height="450">
+  </a>
+    <a href="Images/Street (3).png" class="lightbox">
+    <img src="Images/Street (3).png" alt="Mombasa Beach Shot 3" width="320" height="450">
+  </a>
+    <a href="Images/Streett (1).jpg" class="lightbox">
+    <img src="Images/Streett (1).jpg" alt="Mombasa Beach Shot 3" width="320" height="450">
+  </a>
+    <a href="Images/Streett (2).jpg" class="lightbox">
+    <img src="Images/Streett (2).jpg" alt="Mombasa Beach Shot 3" width="320" height="450">
+  </a>
+  </div>
+</section>
+
+
+<!-- Birthday Events Section -->
+<section>
+  <h2>Birthday Events</h2>
+  <p>From intimate cake-cuttings to lively celebrations, I capture the joy, emotion, and energy of every birthday I shoot.</p>
+
+  <div>
+    <a href="Images/BirtD (1).jpg" class="lightbox">
+    <img src="Images/BirtD (1).jpg" alt="Mombasa Beach Shot 2" width="520" height="350">
+  </a>
+    <a href="Images/BirtD (8).jpg" class="lightbox">
+    <img src="Images/BirtD (8).jpg" alt="Mombasa Beach Shot 3" width="520" height="350">
+  </a>
+    <a href="Images/BirtD (2).jpg" class="lightbox">
+    <img src="Images/BirtD (2).jpg" alt="Mombasa Beach Shot 3" width="520" height="350">
+  </a>
+    <a href="Images/BirtD (3).jpg" class="lightbox">
+    <img src="Images/BirtD (3).jpg" alt="Mombasa Beach Shot 3" width="520" height="350">
+  </a>
+    <a href="Images/BirtD (4).jpg" class="lightbox">
+    <img src="Images/BirtD (4).jpg" alt="Mombasa Beach Shot 3" width="520" height="350">
+  </a>
+    <a href="Images/BirtD (5).jpg" class="lightbox">
+    <img src="Images/BirtD (5).jpg" alt="Mombasa Beach Shot 3" width="520" height="350">
+  </a>
+    <a href="Images/BirtD (6).jpg" class="lightbox">
+    <img src="Images/BirtD (6).jpg" alt="Mombasa Beach Shot 3" width="520" height="350">
+  </a>
+    <a href="Images/BirtD (7).jpg" class="lightbox">
+    <img src="Images/BirtD (7).jpg" alt="Mombasa Beach Shot 3" width="520" height="350">
+  </a>
+  </div>
+</section>
+</div>
+
+
+<!-- Testimonials Section -->
+<section id="testimonials">
+  <h2>What My Clients Say</h2>
+  <p>Real words from real people I’ve worked with:</p>
+
+  <div>
+    <blockquote>
+      <p>"Elly captured my son’s birthday so beautifully — every smile, every hug, every laugh. We’ll treasure these photos forever!"</p>
+      <footer>- Achieng, Nairobi</footer>
+    </blockquote>
+
+    <blockquote>
+      <p>"I loved how Elly handled our beach shoot in Diani. He made us feel comfortable, and the results were amazing!"</p>
+      <footer>- Brian & Zippy, Diani</footer>
+    </blockquote>
+
+    <blockquote>
+      <p>"As a model, I need quality photos. Elly gave me exactly that — creative, stylish, and professional!"</p>
+      <footer>- Sandra, Mombasa</footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>If you’re interested in booking a shoot or have any questions, feel free to reach out using the form below or connect with me through social media.</p>
+
+  <form action="#" method="post">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <input type="submit" value="Send Message">
+  </form>
+
+  <h4>Find Me on Social Media:</h4>
+  <ul>
+    <li><a href="https://www.instagram.com/antishots_ke/" target="_blank">Instagram</a></li>
+    <li><a href="https://www.tiktok.com/@antishots_ke" target="_blank">TikTok</a></li>
+    <li><a href="https://www.facebook.com/Antishots.ke" target="_blank">Facebook</a></li>
+  </ul>
+</section>
+
+
+<!-- FAQ Section -->
+<section id="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div>
+    <h4>📸 How do I book a photoshoot?</h4>
+    <p>You can fill out the contact form below or reach out to me directly via Instagram or Facebook.</p>
+  </div>
+
+  <div>
+    <h4>💰 What are your rates?</h4>
+    <p>Rates vary depending on the type of shoot. Contact me with your project details and I’ll send you a custom quote.</p>
+  </div>
+
+  <div>
+    <h4>📍 Where are you based?</h4>
+    <p>I’m based in Kenya and shoot across different regions — especially Mombasa, Nairobi, and Kisumu.</p>
+  </div>
+
+  <div>
+    <h4>⏱️ How long does it take to receive edited photos?</h4>
+    <p>Usually between 3 to 5 working days. If needed faster, I also offer express delivery options.</p>
+  </div>
+
+  <div>
+    <h4>🎥 Do you offer video coverage too?</h4>
+    <p>Yes, I also shoot and edit professional videos for events and social media content.</p>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer style="text-align: center; padding: 30px; background-color: #f0f0f0; margin-top: 40px;">
+  <p>&copy; 2025 Antishots Photography. All rights reserved.</p>
+  <p>Designed with Love❤️ by Elly Ouma</p>
+  <p><a href="#top">Back to Top</a></p>
+</footer>
+
+<!-- Lightbox Preview (hidden by default, styled and shown later with JS) -->
+<div id="lightbox-container" style="display: none;">
+  <span id="lightbox-close">&times;</span>
+  <img id="lightbox-image" src="" alt="Large preview">
+</div>
+
+
+
+</body>
+</html>
